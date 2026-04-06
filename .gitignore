@@ -12,6 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Environment files — ignore local secrets, keep production config
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# .env.production is intentionally tracked (no secrets, safe for Vercel)
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
